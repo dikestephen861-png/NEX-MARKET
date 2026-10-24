@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101c36">
+  <meta name="description" content="NEX MARKET — Discover electronics, fashion, shoes, home products and more.">
+  <title>NEX MARKET | Shop Everything</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="announcement">
+    WELCOME TO NEX MARKET — YOUR WORLD, ONE MARKETPLACE
+  </div>
+
+  <header class="header">
+    <a href="#" class="logo">
+      <span class="logo-icon">N</span>
+      <span>NEX <b>MARKET</b></span>
+    </a>
+
+    <form class="search" id="searchForm">
+      <input
+        type="search"
+        id="searchInput"
+        placeholder="Search products..."
+        aria-label="Search products"
+      >
+      <button type="submit">⌕</button>
+    </form>
+
+    <button class="cart-button" id="cartButton">
+      🛒 Cart <span id="cartCount">0</span>
+    </button>
+  </header>
+
+  <nav class="navigation">
+    <button data-category="All">All Products</button>
+    <button data-category="Electronics">Electronics</button>
+    <button data-category="Fashion">Fashion</button>
+    <button data-category="Shoes">Shoes</button>
+    <button data-category="Home">Home & Living</button>
+    <button data-category="Beauty">Beauty</button>
+    <button data-category="Sports">Sports</button>
+  </nav>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-content">
+        <span class="eyebrow">DISCOVER SOMETHING NEW</span>
+
+        <h1>
+          Your world.<br>
+          <span>One marketplace.</span>
+        </h1>
+
+        <p>
+          Discover technology, fashion, home essentials
+          and more in one convenient shopping destination.
+        </p>
+
+        <button class="primary-button" id="shopButton">
+          Explore Products →
+        </button>
+
+        <div class="hero-features">
+          <span>✓ Easy discovery</span>
+          <span>✓ Multiple categories</span>
+          <span>✓ Mobile friendly</span>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <div class="hero-circle"></div>
+
+        <div class="hero-product">
+          <span class="product-label">TRENDING</span>
+          <div class="hero-phone">📱</div>
+          <h3>Discover your next favourite.</h3>
+          <p>Explore the marketplace →</p>
+        </div>
+
+        <div class="floating-card">
+          <span>✦</span>
+          <b>Style meets<br>everyday living.</b>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div>
+        <span class="benefit-icon">⌕</span>
+        <div>
+          <b>Easy to explore</b>
+          <p>Search across categories</p>
+        </div>
+      </div>
+
+      <div>
+        <span class="benefit-icon">♡</span>
+        <div>
+          <b>Something for everyone</b>
+          <p>Explore a variety of products</p>
+        </div>
+      </div>
+
+      <div>
+        <span class="benefit-icon">↗</span>
+        <div>
+          <b>Growing marketplace</b>
+          <p>Built with room to grow</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="marketplace" id="marketplace">
+
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">FIND YOUR NEXT FAVOURITE</span>
+          <h2>Explore the marketplace</h2>
+          <p>Browse products across different categories.</p>
+        </div>
+
+        <select id="sortSelect" aria-label="Sort products">
+          <option value="featured">Featured</option>
+          <option value="low">Price: Low to High</option>
+          <option value="high">Price: High to Low</option>
+          <option value="name">Name: A–Z</option>
+        </select>
+      </div>
+
+      <div class="category-grid">
+        <button class="category-card" data-category="Electronics">
+          <span>📱</span>
+          <b>Electronics</b>
+          <small>Technology essentials</small>
+        </button>
+
+        <button class="category-card" data-category="Fashion">
+          <span>👜</span>
+          <b>Fashion</b>
+          <small>Find your style</small>
+        </button>
+
+        <button class="category-card" data-category="Shoes">
+          <span>👟</span>
+          <b>Shoes</b>
+          <small>Step out in style</small>
+        </button>
+
+        <button class="category-card" data-category="Home">
+          <span>🏠</span>
+          <b>Home & Living</b>
+          <small>Make it yours</small>
+        </button>
+
+        <button class="category-card" data-category="Beauty">
+          <span>✨</span>
+          <b>Beauty</b>
+          <small>Everyday self-care</small>
+        </button>
+
+        <button class="category-card" data-category="Sports">
+          <span>⚽</span>
+          <b>Sports</b>
+          <small>Stay active</small>
+        </button>
+      </div>
+
+      <div class="products-heading">
+        <h3 id="productHeading">Featured Products</h3>
+        <button id="clearFilters">Clear filters ×</button>
+      </div>
+
+      <div class="product-grid" id="productGrid"></div>
+
+      <div id="emptyState" class="empty-state" hidden>
+        <span>⌕</span>
+        <h3>No products found</h3>
+        <p>Try another search or choose a different category.</p>
+        <button class="primary-button" id="resetButton">
+          Show All Products
+        </button>
+      </div>
+
+      <p class="demo-note">
+        Demonstration products only. Real sellers, inventory,
+        ordering and payments will be added in later development.
+      </p>
+
+    </section>
+
+    <section class="seller-banner">
+      <div>
+        <span class="eyebrow">BUILT TO GROW</span>
+        <h2>A marketplace with room for everyone.</h2>
+        <p>
+          Our goal is to bring shoppers and sellers together
+          through one convenient online destination.
+        </p>
+      </div>
+
+      <div class="seller-logo">
+        <span>NM</span>
+        <b>NEX MARKET</b>
+        <small>One destination. More possibilities.</small>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <a href="#" class="logo">
+      <span class="logo-icon">N</span>
+      <span>NEX <b>MARKET</b></span>
+    </a>
+
+    <p>Discover more. Shop smarter.</p>
+
+    <small>
+      © <span id="year"></span> NEX MARKET.
+      Marketplace prototype.
+    </small>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+
+  <div class="cart-overlay" id="cartOverlay"></div>
+
+  <aside class="cart-panel" id="cartPanel">
+    <div class="cart-header">
+      <h2>Your Shopping Cart</h2>
+      <button id="closeCart" aria-label="Close cart">×</button>
+    </div>
+
+    <div id="cartItems"></div>
+
+    <div class="cart-empty" id="cartEmpty">
+      <span>🛒</span>
+      <h3>Your cart is empty</h3>
+      <p>Add a product to see it here.</p>
+    </div>
+
+    <div class="cart-total">
+      <span>Demo subtotal</span>
+      <strong id="cartTotal">$0.00</strong>
+    </div>
+
+    <p class="checkout-note">
+      Checkout and payments are not connected yet.
+    </p>
+
+    <button class="primary-button checkout-button" id="checkoutButton">
+      Continue
+    </button>
+  </aside>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
